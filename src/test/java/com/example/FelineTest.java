@@ -10,6 +10,7 @@ public class FelineTest {
 
     Feline feline = new Feline();
     List<String> expectedFood = List.of("Животные", "Птицы", "Рыба");
+    private static final int EXPECTED_KITTENS_COUNT = 1;
 
     @Test
     public void eatMeatTest() throws Exception {
@@ -23,7 +24,7 @@ public class FelineTest {
 
     @Test
     public void getKittensNoCountTest() {
-        assertEquals(1, feline.getKittens());
+        assertEquals(EXPECTED_KITTENS_COUNT, feline.getKittens());
     }
 
 }
